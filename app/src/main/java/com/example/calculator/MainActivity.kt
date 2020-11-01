@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
         inputField2.text.clear()
             znak.text.clear()
         }
-
+// все проверить
         buttonOK.setOnClickListener {
             var inputField1 = (inputField.text.toString()).toDouble()
             Log.i("inputField", inputField1.toString())

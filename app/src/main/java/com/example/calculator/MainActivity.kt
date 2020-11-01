@@ -25,7 +25,7 @@ class MainActivity : AppCompatActivity() {
             Log.i("inputField2", inputField2.toString())
             startActivity(intent)
             var znak2 = znak.text.toString()
-            when (znak2) {
+            when (znak2) { // доработать название переменной
                 "+" ->
                     znak2 = (inputField1 + inputField2).toString()
 

@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
                 "-" -> znak2= (inputField1 - inputField2).toString()
                 "*" -> znak2 = (inputField1*inputField2).toString()
                 "/" -> znak2 = (inputField1/inputField2).toString()
-            }
+            }// доработать меню если нет значений
 
 
             val intent = Intent(this, seccondActivity::class.java)

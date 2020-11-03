@@ -31,18 +31,20 @@ class firstFragment : Fragment() {
             Log.i("inputField2", inputField2.toString())
             var value = znak.text.toString()
             when (value) {
-                "+" -> (inputField1 + inputField2).toString()
+                "+" -> value = (inputField1 + inputField2).toString()
 
-                "-" -> (inputField1 - inputField2).toString()
-                "*" -> (inputField1*inputField2).toString()
-                "/" -> (inputField1/inputField2).toString()
-
-
-
-
+                "-" -> value = (inputField1 - inputField2).toString()
+                "*" -> value = (inputField1*inputField2).toString()
+                "/" -> value = (inputField1/inputField2).toString()
             }
+
+            val fragment = secondFragment()
+            val bundle = Bundle()
+            bundle.putString("result", value)
+            fragment.arguments = bundle
+
             fragmentManager?.beginTransaction()
-                    ?.replace(R.id.fragmentActivity,secondFragment())
+                    ?.replace(R.id.fragmentActivity,fragment)
                     ?.commit()
 
         }

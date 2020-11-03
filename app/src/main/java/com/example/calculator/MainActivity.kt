@@ -12,33 +12,6 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        buttonClear.setOnClickListener {
-            inputField.text.clear()
-        inputField2.text.clear()
-            znak.text.clear()
-        }
-// все проверить
-        buttonOK.setOnClickListener {
-            var inputField1 = (inputField.text.toString()).toDouble()
-            Log.i("inputField", inputField1.toString())
-            var inputField2 = (inputField2.text.toString()).toDouble()
-            Log.i("inputField2", inputField2.toString())
-            startActivity(intent)
-            var znak2 = znak.text.toString()
-            when (znak2) { // доработать название переменной
-                "+" ->
-                    znak2 = (inputField1 + inputField2).toString()
-
-                "-" -> znak2= (inputField1 - inputField2).toString()
-                "*" -> znak2 = (inputField1*inputField2).toString()
-                "/" -> znak2 = (inputField1/inputField2).toString()
-            }// доработать меню если нет значений
-
-
-            val intent = Intent(this, seccondActivity::class.java)
-            intent.putExtra("input", znak2)
-            startActivity(intent)
-        }
         }
             }
 

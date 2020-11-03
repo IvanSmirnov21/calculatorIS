@@ -12,7 +12,7 @@ import kotlinx.android.synthetic.main.activity_seccond.*
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_main2)
 
         supportFragmentManager.beginTransaction()
                 .add(R.id.fragmentActivity, firstFragment())

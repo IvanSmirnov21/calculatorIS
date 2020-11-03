@@ -33,8 +33,8 @@ class firstFragment : Fragment() {
             when (value) {
                 "+" -> value = (inputField1 + inputField2).toString()
 
-                "-" -> value = (inputField1 - inputField2).toString()
-                "*" -> value = (inputField1*inputField2).toString()
+                "-" -> value =  (inputField1 - inputField2).toString()
+                "*" -> value =  (inputField1*inputField2).toString()
                 "/" -> value = (inputField1/inputField2).toString()
             }
 
@@ -45,6 +45,7 @@ class firstFragment : Fragment() {
 
             fragmentManager?.beginTransaction()
                     ?.replace(R.id.fragmentActivity,fragment)
+                    ?.addToBackStack(null)
                     ?.commit()
 
         }

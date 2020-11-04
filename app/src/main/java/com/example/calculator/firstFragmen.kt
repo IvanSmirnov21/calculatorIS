@@ -23,7 +23,7 @@ class firstFragment : Fragment() {
             inputField2.text.clear()
             znak.text.clear()
         }
-// все проверить 2
+// все проверить 2fghdg
         buttonOK.setOnClickListener {
             var inputField1 = (inputField.text.toString()).toDouble()
             Log.i("inputField", inputField1.toString())

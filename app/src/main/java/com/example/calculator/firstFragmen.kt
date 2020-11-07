@@ -21,15 +21,14 @@ class firstFragment : Fragment() {
         buttonClear.setOnClickListener {
             inputField.text.clear()
             inputField2.text.clear()
-            znak.text.clear()
+            sign.text.clear()
         }
-// все проверить 2fghdg
         buttonOK.setOnClickListener {
             var inputField1 = (inputField.text.toString()).toDouble()
             Log.i("inputField", inputField1.toString())
             var inputField2 = (inputField2.text.toString()).toDouble()
             Log.i("inputField2", inputField2.toString())
-            var value = znak.text.toString()
+            var value = sign.text.toString()
             when (value) {
                 "+" -> value = (inputField1 + inputField2).toString()
 
